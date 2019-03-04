@@ -1,9 +1,9 @@
-package apache.kafka.scala.consumers
+package com.org.apache.consumers
 
 import java.util
 
-import apache.kafka.scala.constants.Kafka
-import apache.kafka.scala.utils.{ConsumerKafkaProperties, ProducerKafkaProperties}
+import com.org.apache.constants.Kafka
+import com.org.apache.utils.ConsumerKafkaProperties
 import org.apache.kafka.clients.consumer.KafkaConsumer
 import org.slf4j.LoggerFactory
 
