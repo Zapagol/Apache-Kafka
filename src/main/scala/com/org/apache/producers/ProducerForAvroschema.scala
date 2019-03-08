@@ -2,9 +2,9 @@ package apache.kafka.scala.producers
 
 import java.util.Properties
 
-import apache.kafka.scala.constants.Kafka
-import apache.kafka.scala.models.Employee
-import apache.kafka.scala.utils.{AvroMessage, ProducerCallback}
+import com.org.apache.constants.Kafka
+import com.org.apache.models.Employee
+import com.org.apache.utils.{AvroMessage, ProducerCallback}
 import org.apache.avro.generic.GenericData
 import org.apache.avro.io.EncoderFactory
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, ProducerRecord}
@@ -14,7 +14,7 @@ import scala.io.Source
 
 object ProducerForAvroschema extends App {
 
-  implicit val logger = LoggerFactory.getLogger(ProducerWithCallBack.getClass)
+  implicit val logger = LoggerFactory.getLogger(ProducerForAvroschema.getClass)
 
   //Create Properties
   val properties = new Properties
@@ -25,7 +25,7 @@ object ProducerForAvroschema extends App {
 
   // Create Producer
   val producer
-     = new KafkaProducer[String, Array[Byte]](properties)
+  = new KafkaProducer[String, Array[Byte]](properties)
 
   //Prepare data
   val employee = Employee("Edward",101,"321234321",25000)

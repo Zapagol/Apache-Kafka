@@ -8,6 +8,7 @@ object Kafka {
   //Producer Properties
   lazy val STRING_KEY_SERIALIZER = "org.apache.kafka.common.serialization.StringSerializer"
   lazy val STRING_VALUE_SERIALIZER = "org.apache.kafka.common.serialization.StringSerializer"
+  lazy val BYTEARRAY_VALUE_SERIALIZER = "org.apache.kafka.common.serialization.ByteArraySerializer"
 
   //Consumer Properties
   lazy val STRING_KEY_DESERIALIZER = "org.apache.kafka.common.serialization.StringDeserializer"
